@@ -5,7 +5,7 @@ from autogen_agentchat.ui import Console
 
 
 async def example_usage():
-    client = OpenAIChatCompletionClient(model="gpt-4o-mini", api_key="")
+    client = OpenAIChatCompletionClient(model="gpt-4o-mini")
     m1 = MagenticOne(client=client)
     task = "Write a Python script to fetch data from an API."
     result = await Console(m1.run_stream(task=task))
